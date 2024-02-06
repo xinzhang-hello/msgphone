@@ -1,12 +1,9 @@
 package com.example.msgphone
 
 import android.Manifest
-import android.app.AlarmManager
-import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
-import android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -48,8 +45,6 @@ import androidx.compose.ui.unit.dp
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.example.msgphone.ui.theme.MsgphoneTheme
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
 
@@ -146,7 +141,7 @@ fun ScaffoldExample() {
                 containerColor = MaterialTheme.colorScheme.primaryContainer,
                 titleContentColor = MaterialTheme.colorScheme.primary,
             ), title = {
-                Text("省省提醒")
+                Text("Police Run Run")
             })
         }, bottomBar = {
             BottomAppBar(
